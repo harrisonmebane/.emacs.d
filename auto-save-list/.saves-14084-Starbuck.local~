@@ -1,0 +1,6 @@
+/scpc:wabac.svds.io:/home/harrison/caltrain/flume/audio_analysis.conf
+#_ascpc_bwabac.svds.io_b_ahome_aharrison_acaltrain_aflume_aaudio__analysis.conf#
+/scpc:wabac.svds.io:/home/harrison/caltrain/flume/image_analysis.conf
+#_ascpc_bwabac.svds.io_b_ahome_aharrison_acaltrain_aflume_aimage__analysis.conf#
+/scpc:pi@10.10.0.16:/home/pi/raspi_audio.py
+#_ascpc_bpi@10.10.0.16_b_ahome_api_araspi__audio.py#
