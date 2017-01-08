@@ -1,23 +1,20 @@
 (setq mac-command-modifier 'meta) ; sets the Command key to Meta
 (setq mac-option-modifier 'super)
 
-(add-to-list 'load-path "/Users/harrison/.emacs.d")
+(add-to-list 'load-path "~/.emacs.d/elisp/")
+(let ((default-directory  "~/.emacs.d/elpa/"))
+  (normal-top-level-add-subdirs-to-load-path))
+
 (require 'dockerfile-mode)
 (add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
 
-(add-to-list 'load-path "/Users/harrison/.emacs.d/")
 (autoload
   'ace-jump-mode
   "ace-jump-mode"
   "Emacs quick move minor mode"
   t)
 
-(add-to-list 'load-path "/Users/harrison/.emacs.d/elpa/scala-mode-2.11.2")
 (require 'scala-mode-auto)
-
-(setq user-extempore-directory "/usr/local/Cellar/extempore/0.53/")
-(autoload 'extempore-mode "extempore.el" "" t)
-(add-to-list 'auto-mode-alist '("\\.xtm$" . extempore-mode))
 
 (load "comment-or-uncomment-region-or-line.el")
 
